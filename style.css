@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meow+Script&family=Playfair+Display:ital@1&display=swap');
+@media screen and (max-width:600px){
+    .container {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: .25fr 1fr fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "navbar" 
+          "logo"
+          "intro"
+          "self"
+          "quote";
+      }
+      body{
+        background-image: url("./purpledusk.jpg");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        font-family: 'Meow Script', cursive;
+        color: #FDEBF4;}
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 7vw;
+          }
+     
+      
+      .logo { grid-area: logo;
+        padding-top: 15%;
+        display:flex;
+        justify-content: center; }
+      
+      .intro { grid-area: intro;
+        grid-area: intro;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 5vw;
+        padding-left: 5%;
+        padding-right:5%; }
+      
+      .self { grid-area: self;
+        display:flex;
+        justify-content: center; }
+      
+      .quote { grid-area: quote;
+        font-family: 'Playfair Display', serif;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+      .navbar { grid-area: navbar;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        background-color: #B39BC8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+ }
+ .navbar a:hover {
+    background: #FDEBF4;
+    color: black;
+  }
+      #logo {
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        margin: 15% auto;
+        grid-column: 3/3; 
+      }
+      #profile-pic {
+        width: 40vw;
+        height: 50vw;
+        border-radius: 50%;
+        margin: 15% auto;
+        grid-column: 1/3;
+        border:2px solid #a1c3d1;
+      }
+}
+
+@media screen and (min-width:601px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "navbar navbar"
+          "intro self"
+          "logo quote";
+      }
+      body{
+        background-image: url("./purpledusk.jpg");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        font-family: 'Meow Script', cursive;
+        font-size:4vw;
+        color: #FDEBF4;}
+        .navbar { grid-area: navbar;
+            display:flex;
+            justify-content: space-around;
+            overflow: hidden;
+            background-color: #B39BC8;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+     }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 5vw;
+          }
+          .navbar a:hover {
+            background: #FDEBF4;
+            color: black;
+          }
+      
+      
+      .intro { grid-area: intro;
+        grid-area: intro;
+        display: flex;
+        justify-content: center; 
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 4vw;
+        padding-left: 5%;
+        padding-right:5%; }
+      
+      .self { grid-area: self;
+        display:flex;
+        justify-content: center;
+        height: 10em;
+     }
+      
+      .logo { grid-area: logo;
+        display:flex;
+        justify-content: center; }
+      
+      .quote { grid-area: quote;
+        display:flex;
+        justify-content: center;
+        padding-top: 25%;
+        font-size: 5vw;
+        padding-left: 10%;
+        padding-right: 10%; }
+
+      #logo {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 50%;
+        margin: 15% auto;
+        grid-column: 1/2; }
+    
+        #profile-pic {
+            width: 30vw;
+            height: 40vw;
+            border-radius: 50%;
+            margin: 15% auto;
+            grid-column: 1/3;
+            border:2px solid #a1c3d1;
+          }
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      " self intro logo"
+      "quote quote quote";
+  }
+  
+  .navbar { grid-area: navbar;
+        display:flex;
+        justify-content: space-around;
+        overflow: hidden;
+        background-color: #B39BC8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+ }
+  
+  .logo { grid-area: logo; 
+    display:flex;
+    justify-content: center;
+     }
+  
+  .self { grid-area: self;
+    display:flex;
+    justify-content: center;
+    height: 2em; }
+
+.intro{
+    grid-area: intro;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3vw;
+    padding-left: 5%;
+    padding-right:5%;
+}
+.quote{
+    grid-area: quote;
+    display:flex;
+    text-align: center;
+    padding-top:8%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  
+body{
+    background-image: url("./purpledusk.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    font-family: 'Meow Script', cursive;
+    font-size:4vw;
+    color: #FDEBF4;
+    text-shadow: 2px 2px black;}
+
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 5vw;
+      }
+      
+      .navbar a:hover {
+        background: #FDEBF4;
+        color: black;
+      }
+      #profile-pic {
+        width: 20vw;
+        height: 25vw;
+        border-radius: 50%;
+        margin: 15% auto;
+        grid-column: 1/3;
+        border:2px solid #a1c3d1;
+      }
+      #logo {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        margin: 15% auto;
+        grid-column: 3/3; 
+      }}
