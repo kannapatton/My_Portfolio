@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meow+Script&family=Playfair+Display:ital@1&display=swap');
+@media screen and (max-width:600px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.15fr 0.5fr .5fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "navbar"
+          "pic"
+          "skills"
+          "education"
+          "experience";
+      }
+      body{
+          background-image: url("./shootingstar.jpg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          font-family: 'Meow Script', cursive;
+          color: #FDEBF4;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 7vw;
+      }
+      .navbar { grid-area: navbar;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        background-color: #B39BC8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+ }
+ .navbar a:hover {
+    background: #FDEBF4;
+    color: black;
+  }
+      .pic { grid-area: pic;
+        display: flex;
+        justify-content: space-evenly;
+        }
+    #profile-pic{
+        width: 40vw;
+        height:50vw;
+        border-radius: 50%;
+        border:2px solid #a1c3d1;
+    }
+      
+      .navbar { grid-area: navbar; }
+      
+      .skills { grid-area: skills;
+        display: flex;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        border-bottom: 2px solid #FDEBF4;
+         }
+      
+      .education { grid-area: education;
+        display: flex;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        border-bottom: 2px solid #FDEBF4; }
+      
+      .experience { grid-area: experience;
+        display: flex; 
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        border-bottom: 2px solid #FDEBF4; }
+
+        h1{ font-size: 10vw;
+            text-align: center;
+            align-content: center;
+            margin-left: auto;}
+        
+    }
+
+@media screen and (min-width:601px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr 0.5fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "navbar navbar"
+          "pic pic"
+          "skills experience"
+          "education education";
+      }
+      body{
+        background-image: url("./shootingstar.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Meow Script', cursive;
+        color: #FDEBF4;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 5vw;
+    }
+    .navbar { grid-area: navbar;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+      background-color: #B39BC8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+}
+.navbar a:hover {
+  background: #FDEBF4;
+  color: black;
+}
+    .pic { grid-area: pic;
+      display: flex;
+      justify-content: center;
+      margin-left: 25%;
+      margin-right: 25%;
+      }
+  #profile-pic{
+      width: 30vw;
+      height:40vw;
+      border-radius: 50%;
+      border:2px solid #a1c3d1;
+  }
+      
+      .navbar { grid-area: navbar;
+        display: flex;
+         }
+      
+
+      
+      .skills { grid-area: skills;
+        display: flex;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+      
+      .experience { grid-area: experience;
+        display: flex;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        justify-content: center;
+    }
+      
+      .education { grid-area: education;
+        display: flex; 
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        justify-content: center;
+        }
+    h1{ font-size: 8vw;
+        text-align: center;
+        align-content: center;
+        margin-left: auto;}
+    }
+
+@media screen and (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "navbar navbar navbar"
+          ". pic ."
+          "education experience skills"
+          "education experience skills";
+      }
+      
+      body{
+        background-image: url("./shootingstar.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Meow Script', cursive;
+        color: #FDEBF4;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 4vw;
+    }
+    .navbar { grid-area: navbar;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+      background-color: #B39BC8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+}
+.navbar a:hover {
+  background: #FDEBF4;
+  color: black;
+}
+    .pic { grid-area: pic;
+      display: flex;
+      justify-content: center;
+    }
+
+  #profile-pic{
+      width: 20vw;
+      height:25vw;
+      border-radius: 50%;
+      border:2px solid #a1c3d1;
+  }
+      
+      .navbar { grid-area: navbar;
+        display: flex;
+         }
+      
+      .pic { grid-area: pic;
+        display: flex;
+        justify-content: center; }
+      
+      .skills { grid-area: skills;
+        display: flex;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        margin-right: 20%;
+        justify-content: center;
+        align-content:center; }
+      
+      .experience { grid-area: experience;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        }
+      
+      .education { grid-area: education;
+        display: flex;
+        margin-left: 20%;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        }
+    h1{ font-size: 6vw;
+        text-align: center;
+        align-content: center;
+        margin-left: auto;}
+    }
+      

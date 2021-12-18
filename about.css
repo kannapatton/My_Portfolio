@@ -171,15 +171,15 @@ body{
 @media screen and (min-width: 992px) {
     .container{
       display:grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: .25fr .5fr .5fr;
       grid-auto-columns: 1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
       grid-template-areas: 
-        "navbar navbar"
-        "pic about"
-        "quote  about";
+        "navbar navbar navbar navbar"
+        "pic about about about"
+        "quote  about about about";
       }
       body{
         background-image: url("./purplestars.jpg");
@@ -229,6 +229,7 @@ body{
             display: flex;
             font-family: 'Playfair Display', serif;
             justify-content: center;
+            margin-top: 10%;
             font-family: 'Playfair Display', serif;
             font-size: 2vw;
             padding-left: 5%;

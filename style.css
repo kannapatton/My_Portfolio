@@ -258,7 +258,8 @@ body{
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 5vw;
+        font-size: 4vw;
+        text-shadow: none;
       }
       
       .navbar a:hover {
