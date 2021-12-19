@@ -4,7 +4,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .35fr .25fr 1fr .5fr .25fr;
+    grid-template-rows: .5fr .25fr 1fr .5fr .25fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
