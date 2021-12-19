@@ -96,7 +96,7 @@ body{
           "navbar navbar navbar"
           "quote quote quote"
           "pic about about"
-          "pic about about";
+          ". about about";
       }
       body{
         background-image: url("./purplestars.jpg");
@@ -157,7 +157,7 @@ body{
             display: flex;
             align-items: center;
             font-family: 'Playfair Display', serif;
-            font-size:6vw;
+            font-size:4vw;
             padding-left:10%; }
     
         #myProfilePic{ 
